@@ -1,0 +1,50 @@
+/*! 
+Portfolio Filter 
+Creator: HKT (Harshey)
+Created for: Banko Design
+How to use: Read code first, and if you can't understand, ask. :) 
+NOTE: PLEASE DO NOT MODIFY THIS FILE!!!!
+*/
+@keyframes zoom-in {
+	0% {
+		transform: scale(.7)
+	}
+	100% {
+		transform: none
+	}
+}
+
+.filter ul {
+	list-style-type: none;
+	padding-left: 0
+}
+
+.filter ul li {
+	display: inline;
+	font-family: aileron;
+	color: #d4ec8e;
+	cursor: pointer
+}
+
+.filter ul li:not(:last-child) {
+	padding-right: 5px
+}
+
+.filter li span {
+	opacity: .4
+}
+
+.filter .active span {
+	opacity: 1
+}
+
+.is-animated {
+	animation: .6s zoom-in
+}
+
+.filter ul li {
+	padding: 0px 5px;
+    white-space: break-spaces;
+    display: inline-block;
+    word-break: break-all;
+}
