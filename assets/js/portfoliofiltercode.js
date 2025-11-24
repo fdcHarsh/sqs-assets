@@ -50,7 +50,7 @@ $(document).ready(function() {
 			$boxesGrid.removeClass('is-animated');
 				$boxesGrid.fadeOut().promise().done(function() {
 					$('#gridThumbs img').each(function() {
-						var $altText = $(this).attr("src").replace(/\+/g, ' ');
+						var $altText = decodeURIComponent($(this).attr("src"));
 						if ($altText.toLowerCase().indexOf($filterValue.toLowerCase()) != -1) {
 							$(this).closest(".grid-item").addClass('is-animated').fadeIn();
 						}
